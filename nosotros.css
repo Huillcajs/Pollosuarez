@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f8f5f2;
+}
+
+/* CONTENEDORES GENERALES */
+.sobre, .mission, .centered-message {
+    padding: 40px 20px;
+}
+
+/* SECCIÓN SOBRE NOSOTROS */
+.sobre-container {
+    display: flex;
+    align-items: center;
+    gap: 500px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.sobre-container img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.sobre-container .text {
+    max-width: 500px;
+}
+
+.sobre-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* SECCIÓN MISIÓN */
+.mission {
+    background-color: #e0c89d;
+}
+
+.mission-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.mission-container img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.mission-container .text {
+    max-width: 500px;
+}
+
+.mission-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* SECCIÓN MENSAJE CENTRAL */
+.centro-mensaje {
+    text-align: center;
+    background-color: white;
+}
+
+.centro-mensaje img {
+    width: 700px;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+
+.centro-mensaje h2 {
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .sobre-container, .mission-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .sobre-container img, .mission-container img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .sobre-container .text, .mission-container .text {
+        max-width: 100%;
+    }
+
+    .centro-message img {
+        border-radius: none;
+        align-content: center;
+        width: 100%;
+    }
+}
