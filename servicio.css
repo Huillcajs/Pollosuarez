@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
 }
-/* Estilos generales */
 .container {
     display: flex;
     justify-content: space-between;
@@ -62,8 +61,6 @@
     font-size: 14px;
     color: #555;
 }
-
-/* Diseño responsive */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;

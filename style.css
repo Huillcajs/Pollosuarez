@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
 }
-/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -94,7 +93,6 @@ body {
     min-width: 250px;
 }
 
-/* Responsive para móviles */
 @media (max-width: 768px) {
     .hero {
         flex-direction: column;
@@ -125,7 +123,6 @@ body {
     }
 }
 
-/*Footer*/
 .footer {
     background: #E4D19C;
     background-color: #f8f8f8;
