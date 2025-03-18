@@ -70,8 +70,8 @@ body {
 }
 
 .centro-mensaje img {
-    width: 700px;
-    border-radius: 10px;
+    align-content: center;
+    width: auto;
     display: block;
     margin: auto;
 }
@@ -89,16 +89,14 @@ body {
 
     .sobre-container img, .mission-container img {
         width: 100%;
-        max-width: 400px;
+        max-width: 500px;
     }
 
     .sobre-container .text, .mission-container .text {
         max-width: 100%;
     }
 
-    .centro-message img {
-        border-radius: none;
-        align-content: center;
-        width: 100%;
+    .centro-mensaje img {
+        max-height: 300px; 
     }
 }

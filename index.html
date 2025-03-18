@@ -8,6 +8,7 @@
     <script type="module" src="componentes/headerComponent.js"></script>
     <link rel="stylesheet" href="css/global.css">
     <script type="module" src="componentes/footerComponent.js"></script>
+    <script type="" src="componentes/tarjeta.js"></script>
 </head>
 <body>
 
@@ -18,18 +19,29 @@
             <h1>Sumérgete en las delicias de la comida deliciosa</h1>
             <p>Donde cada pollo asado cuenta una historia de sabor y tradición.</p>
             <nav class="hero-buttons">
-                <a href="#" class="order-button">Ordene ahora</a>
-                <a href="#" class="video-button">
+                <a href="#" class="order-button" onclick="showPopup('Ordene ahora')">Ordene ahora</a>
+                <a href="#" class="video-button" onclick="showPopup('Ver video')">
                     <span>▶</span>
                     Ver video
                 </a>
+                <section class="popup-card" id="popupCard">
+                    <article class="popup-content">
+                        <header>
+                            <h3 id="popupTitle"></h3>
+                        </header>
+                        <p>Gracias por tu interés. Contáctanos para más detalles.</p>
+                        <footer>
+                            <button onclick="closePopup()">Cerrar</button>
+                        </footer>
+                    </article>
+                </section>
             </nav>
         </section>
         <figure class="hero-image"></figure>
     </header>
     
     <section class="categories">
-        <header>
+        <header class="fondo">
             <p>Favoritos del Cliente</p>
             <h2>Categorías populares</h2>
         </header>

@@ -3,10 +3,10 @@ class Header extends HTMLElement {
         super();
         this.innerHTML = `
             <header>
-                <div class="header-container">
-                    <div class="logo">
+                <section class="header-container">
+                    <figure class="logo">
                         <img src="../img/polleria.png" alt="Logo de la pollería">
-                    </div>
+                    </figure>
                     <nav class="nav-links">
                         <ul>
                             <li><a href="index.html">Inicio</a></li>
@@ -16,16 +16,16 @@ class Header extends HTMLElement {
                         </ul>
                     </nav>
                     <a href="contactanos.html" class="contact-button">📞 Contáctanos</a>
-                    <div class="hamburger-menu">&#9776;</div>
-                </div>
-                <div class="mobile-nav">
+                    <button class="hamburger-menu">&#9776;</button>
+                </section>
+                <nav class="mobile-nav">
                     <ul>
                         <li><a href="index.html">Inicio</a></li>
                         <li><a href="menu.html">Menú</a></li>
                         <li><a href="servicio.html">Servicio</a></li>
                         <li><a href="nosotros.html">Nosotros</a></li>
                     </ul>
-                </div>
+                </nav>
             </header>
         `;
     }
